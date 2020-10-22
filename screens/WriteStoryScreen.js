@@ -8,10 +8,10 @@ export default class WriteStoryScreen extends React.Component {
         return(
             <View style={styles.container}>
                 <Header 
-                    backgroundColor = {'pink'}
+                    backgroundColor = {'lightblue'}
                     centerComponent = {{
                         text : 'Story Hub',
-                        style : { color: 'black', fontSize: 30}
+                        style : { color: 'black', fontSize: 32}
                     }}
                 />
                 <TextInput 
@@ -49,27 +49,28 @@ const styles = StyleSheet.create({
       marginTop: 40,
       margin: 10,
       color:'black',
-      padding: 6,
+      padding: 10,
 
   },
   author: {
       height: 40,
       borderWidth: 2,
       margin: 10,
-       padding: 6,
+       padding: 15,
   },
   storyText: {
       height: 250,
       borderWidth: 2,
       margin: 10, 
-      padding: 6,
+      padding: 10,
   },
   submitButton:{
       justifyContent: 'center',
       alignSelf: 'center',
       backgroundColor: 'pink',
       width: 80,
-      height: 40,color:'black',
+      height: 40,
+      color:'black',
   },
   buttonText: {
       textAlign: 'center',
