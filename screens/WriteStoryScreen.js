@@ -1,5 +1,9 @@
 import React from 'react';
+<<<<<<< HEAD
 import { StyleSheet, Text, View, TouchableOpacity, KeyboardAvoidingView, Alert } from 'react-native';
+=======
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+>>>>>>> f4ca085667fa9ded6728c2ef7f97a8147cef91aa
 import { TextInput } from 'react-native-gesture-handler';
 import {Header} from 'react-native-elements';
 import db from '../config'
@@ -16,8 +20,12 @@ export default class WriteStoryScreen extends React.Component {
     }
 
     submitStory = ()=>{
+<<<<<<< HEAD
         Alert.alert('Story Successfully Submitted!');
         console.log(db.collection("stories"));
+=======
+      console.log(db.collection("stories"))
+>>>>>>> f4ca085667fa9ded6728c2ef7f97a8147cef91aa
         db.collection("stories").add({
             title: this.state.title,
             author: this.state.author,
@@ -33,7 +41,11 @@ export default class WriteStoryScreen extends React.Component {
 
     render(){
         return(
+<<<<<<< HEAD
             <KeyboardAvoidingView style={styles.container}>
+=======
+            <View style={styles.container}>
+>>>>>>> f4ca085667fa9ded6728c2ef7f97a8147cef91aa
                 <Header 
                     backgroundColor = {'pink'}
                      centerComponent = {{
@@ -76,10 +88,17 @@ export default class WriteStoryScreen extends React.Component {
                 <TouchableOpacity
                     style={styles.submitButton}
                     onPress={this.submitStory}
+<<<<<<< HEAD
                 >
                     <Text style={styles.buttonText}>Submit</Text>
                 </TouchableOpacity>
             </KeyboardAvoidingView>
+=======
+                   >
+                    <Text style={styles.buttonText}>Submit</Text>
+                </TouchableOpacity>
+            </View>
+>>>>>>> f4ca085667fa9ded6728c2ef7f97a8147cef91aa
         );
     }
 }

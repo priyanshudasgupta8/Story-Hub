@@ -1,7 +1,12 @@
 {
   "expo": {
+<<<<<<< HEAD
     "name": "Story-Hub",
     "slug": "Story-Hub",
+=======
+    "name": "Story-App",
+    "slug": "Story-App",
+>>>>>>> f4ca085667fa9ded6728c2ef7f97a8147cef91aa
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
